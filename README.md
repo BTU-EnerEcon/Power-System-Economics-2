@@ -17,22 +17,12 @@ for detailed tutorial check out the following youtube video: https://www.youtube
 ------------------------------------------------------------------------------------------------------------------------------
 ## **Installing the necessary packages**
 
-The second step is installing the packages. All the necessary packages required for the tutorial has already been included in the 'pse.yml' file in the repository.If you want to take a look at the packages open the .yml file in notepad. I have included Spyder IDE , but if you have individual preference you can install that IDE. To start with this step:
+The second step is installing the packages. I have included Spyder IDE , but if you have individual preference you can install that IDE. To start with this step:
 
-  * Download the pse.yml file from this repository
-  * Move the pse.yml file from the download location to the base environment location (as shown in anaconda prompt) , in my 
-    case it was:
-> (base) C:\Users\Padua 
-  * Alternately you can also change base directory to the location where the .yml file is present by typing the code below. 
-    Enter your path between the "".
-    
-```
-cd ".yml location"
-```
-  * The next step is to create the environment. Type the following code in the anaconda prompt
+   * Type the following code in the anaconda prompt
 
  ```
- conda env create -f pse.yml
+ conda create --name pse -c conda-forge python=3.10 pyomo spyder glpk
 ``` 
 * The environment will be created and you can activate it by typing
 ```
